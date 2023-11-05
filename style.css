@@ -1,5 +1,10 @@
 body {
     font-family: 'work sans';
+    background-color: #111827;
+}
+
+strong{
+    color: blue;
 }
 
 /* HEADER */
@@ -7,6 +12,8 @@ body {
 header {
     padding-right: 5%;
     padding-left: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
     justify-content: space-between;
     display: flex;
     align-items: center;
@@ -14,7 +21,7 @@ header {
 }
 
 header img {
-    width: 150px;
+    width: 180px;
 }
 
 .list {
@@ -29,7 +36,7 @@ header img {
     text-decoration: none;
     color: black;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 25px;
   }
 
   .link::before,
@@ -60,181 +67,14 @@ header img {
 .active::after {
     transform: scaleX(1);
 }
-/*
-@media (max-width: 1300px){
-    header {
-        padding-right: 5%;
-        padding-left: 5%;
-        justify-content: space-between;
-        display: flex;
-        align-items: center;
-        background-color: #ffffff;
-    }
-    header img {
-        width: 150px;
-    }
-    .list {
-        list-style: none;
-        display: flex;
-        align-items: center;
-        gap: 40px;
-      }
-      .link {
-        position: relative;
-        display: inline-block;
-        text-decoration: none;
-        color: black;
-        font-weight: 700;
-        font-size: 20px;
-      }
-    
-      .link::before,
-      .link::after {
-          content: '';
-          position: absolute;
-          left: 0;
-          width: 100%;
-          height: 2px;
-          background-color: #111827;
-          transform: scaleX(0);
-          transition: transform 0.25s;
-      }
-    
-      .link::before {
-        top: -3px;
-        transform-origin: left;
-    }
-    
-    .link::after {
-        bottom: -3px;
-        transform-origin: right;
-    }
-    
-    .link:hover::before,
-    .link:hover::after,
-    .active::before,
-    .active::after {
-        transform: scaleX(1);
-    }
-}
 
-@media (max-width: 768px){
-    header {
-        padding-right: 5%;
-        padding-left: 5%;
-        justify-content: space-between;
-        display: flex;
-        align-items: center;
-        background-color: #ffffff;
-    }
-    
-    header img {
-        width: 150px;
-    }
-    
-    .list {
-        list-style: none;
-        display: flex;
-        align-items: center;
-        gap: 40px;
-      }
-      .link {
-        position: relative;
-        display: inline-block;
-        text-decoration: none;
-        color: black;
-        font-weight: 700;
-        font-size: 20px;
-      }
-    
-      .link::before,
-      .link::after {
-          content: '';
-          position: absolute;
-          left: 0;
-          width: 100%;
-          height: 2px;
-          background-color: #111827;
-          transform: scaleX(0);
-          transition: transform 0.25s;
-      }
-    
-      .link::before {
-        top: -3px;
-        transform-origin: left;
-    }
-    
-    .link::after {
-        bottom: -3px;
-        transform-origin: right;
-    }
-}
-
-@media (max-width: 480px){
-    header {
-        padding-right: 5%;
-        padding-left: 5%;
-        justify-content: space-between;
-        display: flex;
-        align-items: center;
-        background-color: #ffffff;
-    }
-    
-    header img {
-        width: 150px;
-    }
-    
-    .list {
-        list-style: none;
-        display: flex;
-        align-items: center;
-        gap: 40px;
-      }
-      .link {
-        position: relative;
-        display: inline-block;
-        text-decoration: none;
-        color: black;
-        font-weight: 700;
-        font-size: 20px;
-      }
-    
-      .link::before,
-      .link::after {
-          content: '';
-          position: absolute;
-          left: 0;
-          width: 100%;
-          height: 2px;
-          background-color: #111827;
-          transform: scaleX(0);
-          transition: transform 0.25s;
-      }
-    
-      .link::before {
-        top: -3px;
-        transform-origin: left;
-    }
-    
-    .link::after {
-        bottom: -3px;
-        transform-origin: right;
-    }
-    
-    .link:hover::before,
-    .link:hover::after,
-    .active::before,
-    .active::after {
-        transform: scaleX(1);
-    }
-}
-*/
 /*HOME*/
 
 .primer-bloque{
     background-color: #111827;
     margin: 0 auto;
-    padding-bottom: 75px;
+    margin-top: 50px;
+    margin-bottom: 200px;
     padding-left: 50px;
     padding-right: 50px;
 }
@@ -244,12 +84,11 @@ header img {
     font-size: 5rem;
     font-weight: 100;
     width: 400px;
-    padding-top: 20px ;
-    padding-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 .principal img{
-    width: 80%;
+    width: 100%;
     height: 90%;
    object-fit: cover;
 }
@@ -286,7 +125,8 @@ header img {
     color: #fff;
     font-size: 1.1em;
     align-items: center;
-    margin-bottom: 15px
+    margin-bottom: 15px;
+    line-height: 1.5em;
 }
 
 .creacion{
@@ -309,8 +149,7 @@ header img {
 .tercer-bloque {
     background-color: #111827;
     margin: 0 auto;
-    padding-top: 75px;
-    padding-bottom: 75px;
+    margin-bottom: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -370,446 +209,19 @@ a{
   font-size: 30px;
   margin: 20px;
 }
-/*
-@media (max-width: 1300px){
-    
-    .primer-bloque{
-        background-color: #111827;
-        margin: 0 auto;
-        padding-bottom: 75px;
-        padding-left: 50px;
-        padding-right: 50px;
-    }
 
-    .principal h1{
-        color: #fff;
-        font-size: 5rem;
-        font-weight: 100;
-        width: 400px;
-        padding-top: 20px ;
-        padding-bottom: 10px;
-    }
-    
-    .principal img{
-        width: 80%;
-        height: 90%;
-       object-fit: cover;
-    }
-    
-    .Genero{
-        color: white;
-        display: flex;
-        flex-wrap: wrap;
-        margin-bottom: 30px;
-        margin-top: 10px;
-    }
-    
-    .Genero h3{
-        font-size: .875rem;
-        font-weight: 400;
-        line-height: 1.25rem;
-        letter-spacing: .01786em;
-        align-items: center;
-        border: 1px solid transparent;
-        border-radius: 1rem;
-        box-sizing: border-box;
-        display: inline-flex;
-        padding: 0 0.75rem;
-        position: relative;
-        overflow: hidden;
-        border-color: white;
-    }
-    
-    .gen{
-        margin-right: 15px;
-    }
-
-    .principal p {
-        color: #fff;
-        font-size: 1.1em;
-        align-items: center;
-        margin-bottom: 15px
-    }
-
-    .creacion{
-        color: white;
-        display: flex;
-        padding-top: 15px;
-    }
-    
-    .creador{
-        padding-right: 25px;
-        font-size: 1.1em;
-    }
-    
-    .michael{
-        color: white;
-        text-decoration: underline;
-        font-size: 1.1em;
-    }
-    
-    .tercer-bloque {
-        background-color: #111827;
-        margin: 0 auto;
-        padding-top: 75px;
-        padding-bottom: 75px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .personajes {
-      background-color: #030712;
-      width: 250px;
-      margin: 5px;
-      border-radius: 10px;
-      padding: 30px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    
-    }
-    
-    .bjorn{
-      width: 250px;
-      height: 250px;
-      background-image: url(Imagenes/carrusel/Bjorn\ \(1\).jpg);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      border-radius: 50%;
-    }
-    
-    .ragnar{
-      width: 250px;
-      height: 250px;
-      background-image: url(Imagenes/carrusel/Ragnar2.jpg);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      border-radius: 50%;
-    }
-    
-    .lagertha{
-      width: 250px;
-      height: 250px;
-      background-image: url(Imagenes/carrusel/Lagertha.jpg);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      border-radius: 50%;
-    }
-    
-    a{
-      text-decoration: none;
-    }
-    
-    .personajes h4{
-      text-align: center;
-      text-decoration: none;
-      color: white;
-      font-weight: 700;
-      font-size: 30px;
-      margin: 20px;
-    }
-}
-
-@media (max-width: 768px){
-    .primer-bloque{
-        background-color: #111827;
-        margin: 0 auto;
-        padding-bottom: 75px;
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-
-    .principal h1{
-        color: #fff;
-        font-size: 5rem;
-        font-weight: 100;
-        width: 400px;
-        padding-top: 20px ;
-        padding-bottom: 10px;
-    }
-    
-    .principal img{
-        width: 80%;
-        height: 90%;
-       object-fit: cover;
-    }
-    
-    .Genero{
-        color: white;
-        display: flex;
-        flex-wrap: wrap;
-        margin-bottom: 30px;
-        margin-top: 10px;
-    }
-    
-    .Genero h3{
-        font-size: .875rem;
-        font-weight: 400;
-        line-height: 1.25rem;
-        letter-spacing: .01786em;
-        align-items: center;
-        border: 1px solid transparent;
-        border-radius: 1rem;
-        box-sizing: border-box;
-        display: inline-flex;
-        padding: 0 0.75rem;
-        position: relative;
-        overflow: hidden;
-        border-color: white;
-    }
-    
-    .gen{
-        margin-right: 15px;
-    }
-
-    .principal p {
-        color: #fff;
-        font-size: 1.1em;
-        align-items: center;
-        margin-bottom: 15px
-    }
-
-    .creacion{
-        color: white;
-        display: flex;
-        padding-top: 15px;
-    }
-    
-    .creador{
-        padding-right: 25px;
-        font-size: 1.1em;
-    }
-    
-    .michael{
-        color: white;
-        text-decoration: underline;
-        font-size: 1.1em;
-    }
-    
-    .tercer-bloque {
-        background-color: #111827;
-        margin: 0 auto;
-        padding-top: 75px;
-        padding-bottom: 75px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .personajes {
-      background-color: #030712;
-      width: 250px;
-      margin: 5px;
-      border-radius: 10px;
-      padding: 30px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    
-    }
-    
-    .bjorn{
-      width: 250px;
-      height: 250px;
-      background-image: url(Imagenes/carrusel/Bjorn\ \(1\).jpg);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      border-radius: 50%;
-    }
-    
-    .ragnar{
-      width: 250px;
-      height: 250px;
-      background-image: url(Imagenes/carrusel/Ragnar2.jpg);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      border-radius: 50%;
-    }
-    
-    .lagertha{
-      width: 250px;
-      height: 250px;
-      background-image: url(Imagenes/carrusel/Lagertha.jpg);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      border-radius: 50%;
-    }
-    
-    a{
-      text-decoration: none;
-    }
-    
-    .personajes h4{
-      text-align: center;
-      text-decoration: none;
-      color: white;
-      font-weight: 700;
-      font-size: 30px;
-      margin: 20px;
-    }
-}
-
-@media (max-width: 480px){
-
-    .primer-bloque{
-        background-color: #111827;
-        margin: 0 auto;
-        padding-bottom: 75px;
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-
-    .principal h1{
-        color: #fff;
-        font-size: 5rem;
-        font-weight: 100;
-        width: 400px;
-        padding-top: 20px ;
-        padding-bottom: 10px;
-    }
-    
-    .principal img{
-        width: 80%;
-        height: 90%;
-       object-fit: cover;
-    }
-    
-    .Genero{
-        color: white;
-        display: flex;
-        flex-wrap: wrap;
-        margin-bottom: 30px;
-        margin-top: 10px;
-    }
-    
-    .Genero h3{
-        font-size: .875rem;
-        font-weight: 400;
-        line-height: 1.25rem;
-        letter-spacing: .01786em;
-        align-items: center;
-        border: 1px solid transparent;
-        border-radius: 1rem;
-        box-sizing: border-box;
-        display: inline-flex;
-        padding: 0 0.75rem;
-        position: relative;
-        overflow: hidden;
-        border-color: white;
-    }
-    
-    .gen{
-        margin-right: 15px;
-    }
-
-    .principal p {
-        color: #fff;
-        font-size: 1.1em;
-        align-items: center;
-        margin-bottom: 15px
-    }
-
-    .creacion{
-        color: white;
-        display: flex;
-        padding-top: 15px;
-    }
-    
-    .creador{
-        padding-right: 25px;
-        font-size: 1.1em;
-    }
-    
-    .michael{
-        color: white;
-        text-decoration: underline;
-        font-size: 1.1em;
-    }
-    
-    .tercer-bloque {
-        background-color: #111827;
-        margin: 0 auto;
-        padding-top: 75px;
-        padding-bottom: 75px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .personajes {
-      background-color: #030712;
-      width: 250px;
-      margin: 5px;
-      border-radius: 10px;
-      padding: 30px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    
-    }
-    
-    .bjorn{
-      width: 250px;
-      height: 250px;
-      background-image: url(Imagenes/carrusel/Bjorn\ \(1\).jpg);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      border-radius: 50%;
-    }
-    
-    .ragnar{
-      width: 250px;
-      height: 250px;
-      background-image: url(Imagenes/carrusel/Ragnar2.jpg);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      border-radius: 50%;
-    }
-    
-    .lagertha{
-      width: 250px;
-      height: 250px;
-      background-image: url(Imagenes/carrusel/Lagertha.jpg);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      border-radius: 50%;
-    }
-    
-    a{
-      text-decoration: none;
-    }
-    
-    .personajes h4{
-      text-align: center;
-      text-decoration: none;
-      color: white;
-      font-weight: 700;
-      font-size: 30px;
-      margin: 20px;
-    }
-}*/
 
  /* FOOTER */
 
  .footer{
     background:#000;
-    padding:30px 0px;
+    padding:50px 0px;
     font-family: 'Play', sans-serif;
     text-align:center;
   }
     .footer .row{
         width:100%;
-        margin:1% 0%;
+        margin:5% 0%;
         padding:0.6% 0%;
         color:gray;
         font-size:0.8em;
@@ -835,16 +247,22 @@ a{
         }
         
         .footer .row a i{
-        font-size:2em;
+        font-size:4em;
         margin:0% 1%;
         }
+
+        
+        .menu{
+            font-size: 2em;
+        }
+
 
 
 /* GALERIA */
 
 .galeria img{
     border-radius: 8px;
-    width: 100%;
+    width: 400px;
     height: auto;
     box-shadow: 0px 0px 30px #000;
 }
@@ -852,7 +270,7 @@ a{
 .galeria{
     background-color: #111827;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     gap: 32px;
     padding: 20px;
 }
@@ -862,18 +280,18 @@ a{
 .primero{
     background-color: #111827;
     margin: 0 auto;
-    padding-bottom: 75px;
+    margin-top: 80px;
+    margin-bottom: 200px;
     padding-left: 50px;
     padding-right: 50px;
 }
 
 .segundo h1 {
     color: #fff;
-    font-size: 5rem;
+    font-size: 4.5rem;
     font-weight: 100;
     width: 400px;
-    padding-top: 20px ;
-    padding-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 
@@ -881,13 +299,14 @@ a{
     color: #fff;
     font-size: 1.5vw;
     line-height: 2vw;
+    margin-bottom: 60px;
 }
 
 .segundo img{
-    width: 80%;
+    width: 100%;
     height: 90%;
     object-fit: cover;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 }
 
 .gen{
@@ -897,8 +316,6 @@ a{
 .personaje{
     color: white;
     display: flex;
-    padding-top: 30px;
-    padding-bottom: 15px;
 }
 
 .actor{
@@ -916,22 +333,22 @@ a{
 @media(min-width: 480px){
     .texto {
         color: #fff;
-        font-size: 0.9vw;
-        line-height: 2vw;
+        font-size: 0.8vw;
+        line-height: 30px;
     }
 }
 @media(min-width: 768px){
     .texto {
         color: #fff;
-        font-size: 1.2vw;
-        line-height: 2vw;
+        font-size: 1.6vw;
+        line-height: 30px;
     }
 }
 @media(min-width: 1300px){
     .texto {
         color: #fff;
-        font-size: 1.5vw;
-        line-height: 2vw;
+        font-size: 1.8vw;
+        line-height: 40px;
     }
 }
 
