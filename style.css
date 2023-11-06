@@ -3,9 +3,7 @@ body {
     background-color: #111827;
 }
 
-strong{
-    color: blue;
-}
+
 
 /* HEADER */
 
@@ -259,6 +257,14 @@ a{
 
 
 /* GALERIA */
+
+.titulo-galeria{
+    color: #fff;
+    font-size: 5rem;
+    font-weight: 100;
+    width: 400px;
+    margin: 30px;
+}
 
 .galeria img{
     border-radius: 8px;
