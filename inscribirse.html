@@ -28,41 +28,41 @@
       <div class="vid-container">
         <img class="bgvid" src="Imagenes/Portada.jpg" alt="portada">
 
-      <div class="inner-container">
-        <div class="box">
-            <h1>Inscribirse</h1>
-            <h5>Registrate para resivir las ultimas novedades sobre la serie</h5>
-            <form id="miFormulario">
-              <input type="text" name="nombre" placeholder="Nombre" required/>
-              <input type="text" name="email" placeholder="Email" required/>
-              <input type="submit" value="Enviar" id="btnEnviar">
-          </form>
+          <div class="inner-container">
+            <div class="box">
+                <h1>Inscribirse</h1>
+                <h5>Registrate para resivir las ultimas novedades sobre la serie</h5>
+                    <form id="miFormulario">
+                      <input type="text" name="nombre" placeholder="Nombre" required/>
+                      <input type="text" name="email" placeholder="Email" required/>
+                      <input type="submit" value="Enviar" id="btnEnviar">
+                    </form>
           
-          <script>
-              $(document).ready(function() {
-                  $('#miFormulario').submit(function(event) {
-                     
-                      event.preventDefault();
-          
-                      var formData = $(this).serialize();
-          
-                      $.ajax({
-                          type: 'POST',
-                          url: 'registro.php',
-                          data: formData,
-                          success: function(response) {
-                              alert(response);
-                          },
-                          error: function(xhr, status, error) {
-                              console.error(xhr.responseText);
-                          }
-                      });
-                  });
-              });
-          </script>
+                    <script>
+                          $(document).ready(function() {
+                              $('#miFormulario').submit(function(event) {
+                                 
+                                  event.preventDefault();
+                      
+                                  var formData = $(this).serialize();
+                      
+                                  $.ajax({
+                                      type: 'POST',
+                                      url: 'registro.php',
+                                      data: formData,
+                                      success: function(response) {
+                                          alert(response);
+                                      },
+                                      error: function(xhr, status, error) {
+                                          console.error(xhr.responseText);
+                                      }
+                                  });
+                              });
+                          });
+                      </script>
+                </div>
+            </div>
         </div>
-      </div>
-</div>
 
 
     <footer>
