@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="Reset.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&family=Work+Sans:wght@600&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <meta charset="UTF-8">
+        <title>Vikingos</title>
+    </head>
+<body>
+    <header>
+        <div>
+          <a href="index.html"><img src="Imagenes/Logo.png" alt="Vikingos" class="logo"></a>
+        </div>
+        <nav>
+          <ul class="list">
+            <li><a href="galeria.html" class="link">Galeria</a></li>
+            <li><a href="index.html#personajes" class="link">Personajes</a></li>
+            <li><a href="inscribirse.html" class="link">Inscribirse</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="vid-container">
+        <img class="bgvid" src="Imagenes/Portada.jpg" alt="portada">
+
+      <div class="inner-container">
+        <div class="box">
+            <h1>Inscribirse</h1>
+            <h5>Registrate para resivir las ultimas novedades sobre la serie</h5>
+            <form id="miFormulario">
+              <input type="text" name="nombre" placeholder="Nombre" required/>
+              <input type="text" name="email" placeholder="Email" required/>
+              <input type="submit" value="Enviar" id="btnEnviar">
+          </form>
+          
+          <script>
+              $(document).ready(function() {
+                  $('#miFormulario').submit(function(event) {
+                     
+                      event.preventDefault();
+          
+                      var formData = $(this).serialize();
+          
+                      $.ajax({
+                          type: 'POST',
+                          url: 'registro.php',
+                          data: formData,
+                          success: function(response) {
+                              alert(response);
+                          },
+                          error: function(xhr, status, error) {
+                              console.error(xhr.responseText);
+                          }
+                      });
+                  });
+              });
+          </script>
+        </div>
+      </div>
+</div>
+
+
+    <footer>
+      <div class="footer">
+      <div class="row">
+        <a href="https://www.facebook.com/Vikings"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.instagram.com/historyvikings/"><i class="fa fa-instagram"></i></a>
+        <a href="https://twitter.com/HistoryVikings"><i class="fa fa-twitter"></i></a>
+      </div>
+      
+      <div class="row">
+      <ul>
+      <li><a href="galeria.html">Galeria</a></li>
+      <li><a href="index.html#personajes">Personajes</a></li>
+      <li><a href="inscribirse.html">Inscribirse</a></li>
+      </ul>
+      </div>
+      
+      <div class="row">
+      All rights reserved || Designed By: Matias Konig
+      </div>
+      </div>
+      </footer>
+
+</body>
+</html>
